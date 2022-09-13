@@ -1,22 +1,24 @@
 #include "main.h" 
   
  /** 
-  * _islower - Entry point 
-  * Description: checks is a character is lowercase 
-  * @c: the integer value it receives 
-  * Return: 1 if true. 0 if false. 
+  * print_alphabet_x10 - Make alphabet x10 times 
+  * 
+  * Return: void 
   */ 
- int _islower(int c) 
+ void print_alphabet_x10(void) 
  { 
- int i = 'a'; 
+         char c; 
+         int i = 0; 
   
- for (i = 'a'; i <= 'z'; i++) 
- { 
- /* refer int c*/ 
- if (c == i) 
- { 
- return (1); 
- } 
- } 
- return (0); 
+         while (i <= 9) 
+         { 
+                 for (c = 'a'; c <= 'z'; c++) 
+                 { 
+                         _putchar(c); 
+                 } 
+  
+                 _putchar('\n'); 
+  
+                 i++; 
+         } 
  }
