@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _puts - print a string and a new line
+ * _puts - prints a string and a new line
  * @str: pointer to a string to print
  *
- * Retuen: 0
+ * Return: 0
  */
 
 void _puts(char *str)
@@ -13,8 +13,7 @@ void _puts(char *str)
 
 	while (str[i])
 	{
-		_putchar(str[i])
-			i++;
+		_putchar(str[i]);
+		i++;
 	}
 	_putchar('\n');
-}
