@@ -1,21 +1,20 @@
+#include <stdio.h>
 #include "main.h"
+
 /**
- * _memset - fills string with constant char b up to n bytes
- * @s: input pointer to string
- * @b: constant char
- * @n: number of  bytes
- * Return: pointer to a string
- */
-char *_memset(char *s, char b, unsigned int n)
+* _memcpy - a function that copies a memory area
+* @dest: the destination buffer
+* @src: the source buffer
+* @n: area size
+* Return: returns nothing
+*/
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i = 0;
+	unsigned int i;
 
-	while
-		(i < n)
-
+	for (i = 0; i < n; i++)
 	{
-		s[i] = b;
-		i++;
+		dest[i] = src[i];
 	}
-	return (s);
+	return (dest);
 }
